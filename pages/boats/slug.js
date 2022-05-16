@@ -46,8 +46,7 @@ const Index = () => {
                                         layout='fill'
                                         objectFit='cover'
                                         alt='Rent Boat image'
-                                        className="absolute inset-0 object-cover"
-                                        placeholder="blurDataURL"
+                                        className="absolute inset-0 object-cover" 
                                     />
                                 </div>
                             </SwiperSlide>

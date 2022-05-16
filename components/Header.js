@@ -65,11 +65,11 @@ const Header = () => {
                     </button>
 
                     <div
-                        className={'absolute top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
+                        className={'fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
                             (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >
-                        <div className="w-full h-full space-y-3 flex flex-col md:hidden text-center py-36" >
+                        <div className="w-full space-y-3 flex flex-col md:hidden text-center py-36" >
                             {menuItems.map((item, key) => (
                                 <Link href={item.href} key={key}>
                                     <a className='text-3xl px-4 hover:text-gray-500 font-black font-montserrat'>{item.title}</a>
