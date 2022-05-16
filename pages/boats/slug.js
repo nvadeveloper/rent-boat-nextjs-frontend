@@ -40,13 +40,14 @@ const Index = () => {
                     >
                         {images.map((image, key) => (
                             <SwiperSlide key={key}>
-                                <div className='h-96 sm:h-[70vh] w-full bg-gradient-to-r from-cyan-100 to-blue-100'>
+                                <div className='h-96 sm:h-[70vh] w-full'>
                                     <Image
                                         src={image}
                                         layout='fill'
                                         objectFit='cover'
                                         alt='Rent Boat image'
                                         className="absolute inset-0 object-cover"
+                                        placeholder="blurDataURL"
                                     />
                                 </div>
                             </SwiperSlide>
