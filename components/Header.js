@@ -65,7 +65,7 @@ const Header = () => {
                     </button>
 
                     <div
-                        className={'fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
+                        className={'overflow-hidden absolute top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
                             (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
                     >
