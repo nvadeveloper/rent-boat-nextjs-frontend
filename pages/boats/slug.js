@@ -40,7 +40,7 @@ const Index = () => {
                     >
                         {images.map((image, key) => (
                             <SwiperSlide key={key}>
-                                <div className='h-96 sm:h-[70vh] w-full'>
+                                <div className='h-96 sm:h-[70vh] w-full bg-gradient-to-r from-cyan-100 to-blue-100'>
                                     <Image
                                         src={image}
                                         layout='fill'
@@ -113,6 +113,7 @@ const Index = () => {
                     </div>
                 </div>
             </section>
+         
         </>
     )
 }
