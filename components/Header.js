@@ -7,6 +7,17 @@ const Header = () => {
 
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
 
+    const onToggleMobileMenu = () => {
+        setMobileMenuIsOpen((status) => {
+          if (status) {
+            document.body.style.overflow = 'auto'
+          } else {
+            document.body.style.overflow = 'hidden'
+          }
+          return !status
+        })
+      }
+
     const menuItems = [
         {
             title: 'Главная',
@@ -31,7 +42,7 @@ const Header = () => {
     ]
 
     const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300`
-
+   
     return (
         <header>
             <div className="">
@@ -57,7 +68,7 @@ const Header = () => {
 
                     <button
                         className="z-30 h-10 w-6 rounded-xl justify-center items-center group md:hidden"
-                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
+                        onClick={onToggleMobileMenu}
                     >
                         <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
                         <div className={`${menuLine} ${mobileMenuIsOpen ? "opacity-0" : ""}`} />
@@ -65,9 +76,9 @@ const Header = () => {
                     </button>
 
                     <div
-                        className={'overflow-hidden absolute top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
+                        className={'overflow-hidden fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
                             (mobileMenuIsOpen ? " flex" : " hidden")}
-                        onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
+                        onClick={onToggleMobileMenu}
                     >
                         <div className="w-full space-y-3 flex flex-col md:hidden text-center py-36" >
                             {menuItems.map((item, key) => (
