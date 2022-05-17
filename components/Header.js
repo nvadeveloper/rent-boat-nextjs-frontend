@@ -36,6 +36,10 @@ const Header = () => {
             href: '/yachts',
         },
         {
+            title: 'Контакты',
+            href: '/contacts',
+        },
+        {
             title: 'О нас',
             href: '/about',
         },
