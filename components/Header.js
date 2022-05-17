@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useState } from "react";
+import { useState } from "react"
 
 
 
@@ -9,14 +9,14 @@ const Header = () => {
 
     const onToggleMobileMenu = () => {
         setMobileMenuIsOpen((status) => {
-          if (status) {
-            document.body.style.overflow = 'auto'
-          } else {
-            document.body.style.overflow = 'hidden'
-          }
-          return !status
+            if (status) {
+                document.body.style.overflow = 'auto'
+            } else {
+                document.body.style.overflow = 'hidden'
+            }
+            return !status
         })
-      }
+    }
 
     const menuItems = [
         {
@@ -42,7 +42,7 @@ const Header = () => {
     ]
 
     const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300`
-   
+
     return (
         <header>
             <div className="">
