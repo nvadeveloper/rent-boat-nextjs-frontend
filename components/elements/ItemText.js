@@ -6,14 +6,14 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
 
     const onToggleModal = () => {
 
-        setShowModal((status) => {
-            if (status) {
-                document.body.style.overflow = 'auto'
-            } else {
-                document.body.style.overflow = 'hidden'
-            }
-            return !status
-        })
+        // setShowModal((status) => {
+        //     if (status) {
+        //         document.body.style.overflow = 'auto'
+        //     } else {
+        //         document.body.style.overflow = 'hidden'
+        //     }
+        //     return !status
+        // })
     }
 
     return (
@@ -32,7 +32,7 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
                     >
                         Заказать
                     </button>
-                    {/* {showModal ? (
+                    {showModal ? (
                         <>  <div
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                     >
@@ -49,7 +49,7 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
                            
                             <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
                         </>
-                    ) : null} */}
+                    ) : null}
                 </div>
             </div>
         </>
