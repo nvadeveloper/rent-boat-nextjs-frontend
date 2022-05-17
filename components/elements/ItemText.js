@@ -5,6 +5,7 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
     const [showModal, setShowModal] = useState(false)
 
     const onToggleModal = () => {
+
         setShowModal((status) => {
             if (status) {
                 document.body.style.overflow = 'auto'
@@ -31,7 +32,7 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
                     >
                         Заказать
                     </button>
-                    {showModal ? (
+                    {/* {showModal ? (
                         <>  <div
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                     >
@@ -48,7 +49,7 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
                            
                             <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
                         </>
-                    ) : null}
+                    ) : null} */}
                 </div>
             </div>
         </>
