@@ -36,10 +36,6 @@ const Header = () => {
             href: '/yachts',
         },
         {
-            title: 'Контакты',
-            href: '/contacts',
-        },
-        {
             title: 'О нас',
             href: '/about',
         },
@@ -49,9 +45,9 @@ const Header = () => {
 
     return (
         <header>
-            <div className="">
+            <div>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-                    <div className="">
+                    <div>
                         <Link href='/'>
                             <a className="font-bold text-2xl text-blue-600">Rent Boat</a>
                         </Link>
@@ -63,6 +59,7 @@ const Header = () => {
                                 <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{item.title}</a>
                             </Link>
                         ))}
+
                         <div className='rounded-xl py-3 px-4 hover:bg-gray-100 cursor-pointer'>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 22 22" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -80,8 +77,7 @@ const Header = () => {
                     </button>
 
                     <div
-                        className={'overflow-hidden fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' +
-                            (mobileMenuIsOpen ? " flex" : " hidden")}
+                        className={'fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' + (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={onToggleMobileMenu}
                     >
                         <div className="w-full space-y-3 flex flex-col md:hidden text-center py-36" >
