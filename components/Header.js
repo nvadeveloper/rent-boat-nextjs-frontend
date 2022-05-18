@@ -1,13 +1,9 @@
 import Link from "next/link"
 import { useState } from "react"
 
-
-
 const Header = () => {
 
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
-    // const [languageDropdownIsOpen, setLanguageDropdownIsOpen] = useState(false)
-
 
     const onToggleMobileMenu = () => {
         setMobileMenuIsOpen((status) => {
@@ -61,27 +57,6 @@ const Header = () => {
                                 <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{item.title}</a>
                             </Link>
                         ))}
-
-                        {/* <div className="relative">
-                            <div
-                                className='rounded-xl py-3 px-4 hover:bg-gray-100 cursor-pointer'
-                                onClick={() => setLanguageDropdownIsOpen(!languageDropdownIsOpen)}
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 22 22" stroke="currentColor" strokeWidth={2}>
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                                </svg>
-                            </div>
-                            {languageDropdownIsOpen ? (
-                                <>
-                                    <div className="w-40 h-40 bg-red-500 absolute top-12 right-0">
-                                        sdf
-                                    </div>
-                                </>
-                            ) : null
-                            }
-
-                        </div> */}
-
                     </div>
 
                     <button

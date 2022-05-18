@@ -1,10 +1,5 @@
 import { useState } from "react"
-import { CgClose } from 'react-icons/Cg';
-import { IoIosClose } from 'react-icons/Io';
-
-
-
-
+import { IoIosClose } from 'react-icons/Io'
 
 const ItemContactButton = () => {
 
