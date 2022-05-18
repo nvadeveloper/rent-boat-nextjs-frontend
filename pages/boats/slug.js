@@ -1,10 +1,3 @@
-
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// import 'swiper/css/navigation'
-// import { Swiper, SwiperSlide } from 'swiper/react'
-// import { Pagination, Navigation } from 'swiper'
-// import Image from 'next/image'
 import ItemSwiperSlider from '../../components/elements/ItemSwiperSlider'
 import ItemText from '../../components/elements/ItemText'
 

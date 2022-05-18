@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { IoIosClose } from 'react-icons/Io'
+import { IoIosClose } from 'react-icons/io'
 
 const ItemContactButton = () => {
 
@@ -31,7 +31,7 @@ const ItemContactButton = () => {
                         <div className="flex justify-between border-b-[1px] p-4 lg:p-6">
                             <p className="text-4xl font-extrabold font-montserrat">Заказать</p>
                             <button
-                                className="h-10 w-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
+                                className="h-8 w-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
                                 onClick={onToggleModal}
                             >
                                 <IoIosClose className="h-6 w-6" />
@@ -44,10 +44,9 @@ const ItemContactButton = () => {
                         </div>
                     </div>
                     <div
-                        className="fixed inset-0 z-40 bg-black opacity-50 "
+                        className="fixed inset-0 z-40 bg-black opacity-50"
                         onClick={onToggleModal}
                     />
-
                 </>
             ) : null}
         </>
