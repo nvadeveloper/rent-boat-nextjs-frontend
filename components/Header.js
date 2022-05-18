@@ -68,7 +68,7 @@ const Header = () => {
                     </div>
 
                     <button
-                        className="z-30 h-10 w-6 rounded-xl justify-center items-center group md:hidden"
+                        className="h-10 w-6 rounded-xl justify-center items-center group md:hidden z-30"
                         onClick={onToggleMobileMenu}
                     >
                         <div className={`${menuLine} ${mobileMenuIsOpen ? "rotate-45 translate-y-[6px]" : ""}`} />
@@ -77,7 +77,7 @@ const Header = () => {
                     </button>
 
                     <div
-                        className={'fixed top-0 left-0 w-full h-full z-20 bg-white md:hidden' + (mobileMenuIsOpen ? " flex" : " hidden")}
+                        className={'fixed inset-0 w-full h-full bg-white md:hidden z-20' + (mobileMenuIsOpen ? " flex" : " hidden")}
                         onClick={onToggleMobileMenu}
                     >
                         <div className="w-full space-y-3 flex flex-col md:hidden text-center py-36" >

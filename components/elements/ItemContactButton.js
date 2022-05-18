@@ -1,4 +1,10 @@
 import { useState } from "react"
+import { CgClose } from 'react-icons/Cg';
+import { IoIosClose } from 'react-icons/Io';
+
+
+
+
 
 const ItemContactButton = () => {
 
@@ -26,34 +32,25 @@ const ItemContactButton = () => {
             </button>
             {showModal ? (
                 <>
-                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                        <div className="bg-white w-96 h-96">
+                    <div className="fixed inset-0 m-auto z-50 bg-white lg:w-1/2 lg:h-1/2 p-5">
+                        <div className="flex justify-between">
+                            <p className="text-4xl font-extrabold font-montserrat">Заказать</p>
                             <button
-                                className="bg-black hover:bg-gray-600 p-2 text-white rounded-full"
+                                className="h-10 w-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
                                 onClick={onToggleModal}
-                                type="button"
                             >
-                                <span>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="18"
-                                        height="18"
-                                        fill="currentColor"
-                                        viewBox="0 0 18 18"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M13.243 4.757a.857.857 0 00-1.213 0L9 7.787l-3.03-3.03A.857.857 0 104.757 5.97L7.787 9l-3.03 3.03a.857.857 0 001.213 1.213L9 10.213l3.03 3.03a.857.857 0 101.213-1.213L10.213 9l3.03-3.03a.857.857 0 000-1.213z"
-                                            clipRule="evenodd"
-                                        >
-                                        </path>
-                                    </svg>
-                                </span>
+                                <IoIosClose className="h-6 w-6" />
                             </button>
                         </div>
+                        <p className="mt-10">Позвонить: +7991111111</p>
+                        <p>WhatsApp: +7991111111</p>
+                        <p>Телеграмм: @rentboat</p>
                     </div>
-
-                    <div className="opacity-50 fixed inset-0 z-40 bg-black" />
+                    <div
+                        className="fixed inset-0 z-40 bg-black opacity-50 "
+                        onClick={onToggleModal}
+                    />
+                   
                 </>
             ) : null}
         </>

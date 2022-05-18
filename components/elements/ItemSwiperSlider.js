@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
 
+import { GrFormNext } from 'react-icons/Gr';
+
+
 const ItemSwiperSlider = ({ images }) => {
     return (
         <>
@@ -60,7 +63,7 @@ const ItemSwiperSlider = ({ images }) => {
                                 clipRule="evenodd"
                             >
                             </path>
-                        </svg>
+                        </svg> 
                     </div>
 
                     <div className='swiper-button-next'>
