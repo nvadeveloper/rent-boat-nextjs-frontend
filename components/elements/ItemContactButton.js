@@ -32,8 +32,8 @@ const ItemContactButton = () => {
             </button>
             {showModal ? (
                 <>
-                    <div className="fixed inset-0 m-auto z-50 bg-white lg:w-1/2 lg:h-1/2 p-5">
-                        <div className="flex justify-between">
+                    <div className="fixed inset-0 m-auto z-50 bg-white lg:w-1/2 lg:h-1/2">
+                        <div className="flex justify-between border-b-[1px] p-4 lg:p-6">
                             <p className="text-4xl font-extrabold font-montserrat">Заказать</p>
                             <button
                                 className="h-10 w-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
@@ -42,15 +42,17 @@ const ItemContactButton = () => {
                                 <IoIosClose className="h-6 w-6" />
                             </button>
                         </div>
-                        <p className="mt-10">Позвонить: +7991111111</p>
-                        <p>WhatsApp: +7991111111</p>
-                        <p>Телеграмм: @rentboat</p>
+                        <div className="p-4 lg:p-6">
+                            <p>Позвонить: +7991111111</p>
+                            <p>WhatsApp: +7991111111</p>
+                            <p>Телеграмм: @rentboat</p>
+                        </div>
                     </div>
                     <div
                         className="fixed inset-0 z-40 bg-black opacity-50 "
                         onClick={onToggleModal}
                     />
-                   
+
                 </>
             ) : null}
         </>
