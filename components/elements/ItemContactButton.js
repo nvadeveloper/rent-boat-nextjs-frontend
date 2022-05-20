@@ -38,9 +38,10 @@ const ItemContactButton = () => {
                             </button>
                         </div>
                         <div className="p-4 lg:p-6">
-                            <p>Позвонить: +7991111111</p>
-                            <p>WhatsApp: +7991111111</p>
-                            <p>Телеграмм: @rentboat</p>
+                            <p>Вы можете сязаться с нами через:</p>
+                            <p>Телефон: <a href="tel:+79911142131" className="text-blue-600 hover:text-blue-500">+79911142131</a></p>
+                            <p>WhatsApp: <a href="https://wa.me/79911142131" className="text-blue-600 hover:text-blue-500">+79911142131</a></p>
+                            <p>Телеграм: <a href="https://t.me/nikitaav27" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-500">@nikitaav27</a></p>
                         </div>
                     </div>
                     <div

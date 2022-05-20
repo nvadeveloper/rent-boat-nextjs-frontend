@@ -1,12 +1,38 @@
-
+import Link from "next/link"
 
 const Index = () => {
 
   return (
     <>
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+
+        <p className="max-w-5xl mx-auto text-center text-4xl sm:text-6xl lg:text-8xl font-extrabold mt-10 mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-700">Откройте для себя совершенно новое путешествие!</p>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <Link href='/boats'>
+            <a>
+              <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 h-72">
+                <p className="text-3xl font-extrabold font-montserrat">Аренда Катра</p>
+              </div>
+            </a>
+          </Link>
+          <Link href='/yachts'>
+            <a>
+              <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 h-72">
+                <p className="text-3xl font-extrabold font-montserrat">Аренда Яхты</p>
+              </div>
+            </a>
+          </Link>
+          <Link href='/ships'>
+            <a>
+              <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 h-72">
+                <p className="text-3xl font-extrabold font-montserrat">Аренда Тепдохода</p>
+              </div>
+            </a>
+          </Link>
+        </div>
+
+        
       </section>
     </>
   )
