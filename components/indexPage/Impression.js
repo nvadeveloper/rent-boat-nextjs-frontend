@@ -3,7 +3,7 @@
 const Impression = () => {
     return (
         <>
-            <p className="text-4xl font-extrabold font-montserrat py-6 sm:pt-12 sm:pb-10">Впечатления</p>
+            <p className="text-4xl font-extrabold font-montserrat py-6 sm:pt-12 sm:pb-10 mt-10">Впечатления</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
 
