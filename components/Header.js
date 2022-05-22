@@ -54,7 +54,7 @@ const Header = () => {
                     <div className="space-x-3 hidden md:flex">
                         {menuItems.map((item, key) => (
                             <Link href={item.href} key={key}>
-                                <a className='rounded-xl py-3 px-4 hover:bg-gray-100'>{item.title}</a>
+                                <a className='rounded-xl py-3 px-4 hover:bg-gray-100 ease-in-out duration-200'>{item.title}</a>
                             </Link>
                         ))}
                     </div>
