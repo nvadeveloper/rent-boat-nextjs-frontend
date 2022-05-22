@@ -5,7 +5,6 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-
 const ItemSwiperSlider = ({ images }) => {
     return (
         <>
@@ -27,19 +26,21 @@ const ItemSwiperSlider = ({ images }) => {
                 >
                     {images.map((image, key) => (
                         <SwiperSlide key={key}>
-                            <div className='h-80 sm:h-[70vh] w-full'>
+                            <div className='h-80 sm:h-[70vh] w-full bg-slate-100'>
                                 <Image
                                     src={image}
                                     layout='fill'
                                     objectFit='cover'
-                                    alt='Rent Boat image'
+                                    alt='Rent Boat Image'
                                     className="absolute inset-0 object-cover"
                                 />
                             </div>
                         </SwiperSlide>
                     ))}
 
-                    <div className='swiper-pagination'></div>
+                    <div className='swiper-pagination'>
+                        
+                    </div>
 
                     <div className='swiper-button-prev'>
                         <svg

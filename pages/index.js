@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Impression from "../components/indexPage/Impression"
 
+
 const Index = () => {
 
   return (
