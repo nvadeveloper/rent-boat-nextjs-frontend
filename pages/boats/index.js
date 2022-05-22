@@ -119,7 +119,7 @@ const Index = () => {
               </div>
               <div className="flex flex-col items-end">
                 <p className="text-sm text-gray-900 mt-2">{text.price} руб/час</p>
-                <p className="text-sm text-gray-600">{text.person} человек</p>
+                <p className="text-sm text-gray-900">{text.person} человек</p>
               </div>
             </div>
           </div>
