@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 selection:bg-blue-100 selection:text-black">
-        <PageHeading>О нас</PageHeading>
+        <PageHeading><h1>О нас</h1></PageHeading>
         <p>Nautal - ваш посредник для аренды яхт, лидер на рынке Испании. У нас предлагается в аренду более 30 000 судов в 60 странах. Свыше 1 300 000 клиентов пользуются нашими услугами ежегодно.</p>
       </section>
       

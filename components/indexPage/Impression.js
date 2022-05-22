@@ -1,9 +1,10 @@
+import PageHeading from "../elements/PageHeading"
 
 
 const Impression = () => {
     return (
         <>
-            <p className="text-4xl font-extrabold font-montserrat py-6 sm:pt-12 sm:pb-10 mt-10">Впечатления</p>
+            <PageHeading><p className="mt-10">Впечатления</p></PageHeading>
 
             <div className="flex overflow-x-auto space-x-8 h-72 pb-4 snap-x">
 
