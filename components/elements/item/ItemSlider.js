@@ -5,7 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-const ItemSwiperSlider = ({ images }) => {
+const ItemSlider = ({ images }) => {
     return (
         <>
             <div className="relative w-full h-80 sm:h-[70vh] lg:w-1/2 lg:h-full">
@@ -93,4 +93,4 @@ const ItemSwiperSlider = ({ images }) => {
     )
 }
 
-export default ItemSwiperSlider
+export default ItemSlider

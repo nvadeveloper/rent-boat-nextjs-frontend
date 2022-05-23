@@ -2,7 +2,6 @@ import Impression from "../components/indexPage/Impression"
 import Navigation from "../components/indexPage/Navigation"
 import Tagline from "../components/indexPage/Tagline"
 
-
 const Index = () => {
 
   return (

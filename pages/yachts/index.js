@@ -1,6 +1,5 @@
 import PageHeading from "../../components/elements/PageHeading"
 
-
 const Yachts = () => {
 
   return (

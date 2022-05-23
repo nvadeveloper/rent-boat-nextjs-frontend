@@ -1,5 +1,5 @@
-import ItemSwiperSlider from '../../components/elements/ItemSwiperSlider'
-import ItemText from '../../components/elements/ItemText'
+import ItemSwiperSlider from '../../components/elements/item/ItemSlider'
+import ItemText from '../../components/elements/item/ItemText'
 
 const Index = () => {
 
