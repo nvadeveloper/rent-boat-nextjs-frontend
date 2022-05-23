@@ -1,4 +1,5 @@
 
+
 const CardText = ({ name, price, tag, person }) => {
 
     return (
