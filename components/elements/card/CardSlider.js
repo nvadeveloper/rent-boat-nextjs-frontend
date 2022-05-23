@@ -9,6 +9,7 @@ const CardSlider = ({ images }) => {
 
     return (
         <>
+            <style jsx>{`* { --swiper-pagination-bullet-size: 10px; }`}</style>
             <Swiper
                 loop={true}
                 pagination={{
@@ -37,7 +38,8 @@ const CardSlider = ({ images }) => {
                     </SwiperSlide>
                 ))}
 
-                <div className='swiper-pagination'></div>
+                <div className='swiper-pagination'>
+                </div>
 
                 <div className='swiper-button-prev'>
                     <svg
@@ -85,6 +87,7 @@ const CardSlider = ({ images }) => {
                     </svg>
                 </div>
             </Swiper>
+   
         </>
     )
 }

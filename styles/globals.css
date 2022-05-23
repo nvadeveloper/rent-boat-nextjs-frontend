@@ -11,6 +11,21 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@layer utilities {
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -27,36 +42,28 @@
   opacity: 85%;
 }
 
+.swiper-button-disabled {
+  display: none !important;
+}
+
+
 .swiper-pagination-bullet {
   opacity: 60% !important;
   background-color: #ffffff !important;
-  width: 14px !important;
-  height: 14px !important;
+  background: #ffffff !important;
+    /* width: 14px !important;
+  height: 14px !important; */
 }
 
 .swiper-pagination-bullet-active {
   opacity: 100% !important;
   background-color: #ffffff !important;
 }
-.swiper-button-disabled {
-  display: none !important;
-}
 
 @media (max-width: 600px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
-  }
-}
-
-@layer utilities {
-  /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
   }
 }

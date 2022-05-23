@@ -8,6 +8,7 @@ import 'swiper/css/navigation'
 const ItemSlider = ({ images }) => {
     return (
         <>
+            <style jsx>{`* { --swiper-pagination-bullet-size: 14px; }`}</style>
             <div className="relative w-full h-80 sm:h-[70vh] lg:w-1/2 lg:h-full">
                 <Swiper
                     loop={true}
@@ -39,7 +40,7 @@ const ItemSlider = ({ images }) => {
                     ))}
 
                     <div className='swiper-pagination'>
-                        
+
                     </div>
 
                     <div className='swiper-button-prev'>
@@ -62,7 +63,7 @@ const ItemSlider = ({ images }) => {
                                 clipRule="evenodd"
                             >
                             </path>
-                        </svg> 
+                        </svg>
                     </div>
 
                     <div className='swiper-button-next'>
