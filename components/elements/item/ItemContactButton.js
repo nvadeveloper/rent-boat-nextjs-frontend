@@ -24,7 +24,7 @@ const ItemContactButton = () => {
             </button>
             {showModal ? (
                 <>
-                    <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 lg:w-1/2 lg:h-full ">
+                    <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 m-auto lg:inset-0 lg:w-1/2 lg:h-1/2 ">
                         <div className="flex justify-between border-b-[1px] p-4 lg:p-6">
                             <p className="text-4xl font-extrabold font-montserrat">Заказать</p>
                             <button
