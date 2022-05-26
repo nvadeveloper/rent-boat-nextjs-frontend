@@ -1,9 +1,8 @@
-import Link from "next/link"
-import CardSlider from "./CardSlider"
-import CardText from "./CardText"
+import Link from 'next/link';
+import CardSlider from './CardSlider';
+import CardText from './CardText';
 
 const Card = ({ images, name, price, tag, person, href }) => {
-
     return (
         <>
             <Link href={href}>
@@ -13,7 +12,7 @@ const Card = ({ images, name, price, tag, person, href }) => {
                 </a>
             </Link>
         </>
-    )
-}
+    );
+};
 
-export default Card
+export default Card;

@@ -1,7 +1,4 @@
-
-
 const CardText = ({ name, price, tag, person }) => {
-
     return (
         <>
             <div className="my-2">
@@ -15,7 +12,7 @@ const CardText = ({ name, price, tag, person }) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default CardText
+export default CardText;
