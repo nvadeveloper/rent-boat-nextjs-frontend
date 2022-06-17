@@ -13,11 +13,29 @@ const array = [
         title: 'Аренда Тепдохода',
         href: '/ships',
     },
+    {
+        title: 'Сапбординг',
+        href: '/ships',
+    },
 ];
 const Navigation = () => {
     return (
         <>
-            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* <ul className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                {array.map((item, i) => (
+                    <li key={i}>
+                        <Link href={item.href}>
+                            <a>
+                                <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-3xl font-black h-72 hover:shadow-md ease-in-out duration-300 ">
+                                    {item.title}
+                                </div>
+                            </a>
+                        </Link>
+                    </li>
+                ))}
+            </ul> */}
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {array.map((item, i) => (
                     <li key={i}>
                         <Link href={item.href}>
