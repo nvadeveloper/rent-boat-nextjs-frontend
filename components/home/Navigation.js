@@ -22,7 +22,7 @@ const Navigation = () => {
                     <li key={i}>
                         <Link href={item.href}>
                             <a>
-                                <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-3xl font-extrabold font-montserrat h-72 hover:shadow-md ease-in-out duration-300 ">
+                                <div className="rounded-2xl p-6 bg-gradient-to-r from-cyan-100 to-blue-100 text-3xl font-black h-72 hover:shadow-md ease-in-out duration-300 ">
                                     {item.title}
                                 </div>
                             </a>

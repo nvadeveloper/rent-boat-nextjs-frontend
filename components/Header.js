@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { IoIosClose } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
 
 const Header = () => {
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
@@ -39,8 +40,6 @@ const Header = () => {
         },
     ];
 
-    const menuLine = `h-[2px] w-6 my-[4px] rounded-full bg-black transition ease transform duration-300`;
-
     return (
         <header>
             <div className="absolute  top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
@@ -70,17 +69,7 @@ const Header = () => {
                     <button
                         className="h-10 w-6 rounded-xl justify-center items-center group md:hidden"
                         onClick={onToggleMobileMenu}>
-                        <div
-                            className={`${menuLine} ${
-                                mobileMenuIsOpen ? 'rotate-45 translate-y-[6px]' : ''
-                            }`}
-                        />
-                        <div className={`${menuLine} ${mobileMenuIsOpen ? 'opacity-0' : ''}`} />
-                        <div
-                            className={`${menuLine} ${
-                                mobileMenuIsOpen ? '-rotate-45 -translate-y-[6px]' : ''
-                            }`}
-                        />
+                        <FiMenu className="w-6 h-6 text-gray-900 hover:text-gray-700" />
                     </button>
 
                     <div
@@ -93,7 +82,7 @@ const Header = () => {
                             {menuItems.map((item, key) => (
                                 <li key={key}>
                                     <Link href={item.href}>
-                                        <a className="text-xl px-4 hover:text-gray-500 font-bold font-montserrat">
+                                        <a className="text-xl px-4 hover:text-gray-500 font-bold">
                                             {item.title}
                                         </a>
                                     </Link>

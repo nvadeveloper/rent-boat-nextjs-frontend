@@ -30,7 +30,7 @@ const Impression = () => {
                     <li
                         className="rounded-2xl bg-gradient-to-r from-cyan-100 to-blue-100 snap-center hover:shadow-md ease-in-out duration-300 "
                         key={i}>
-                        <p className="w-72 sm:w-80 p-6 text-3xl font-extrabold font-montserrat">
+                        <p className="w-72 sm:w-80 p-6 text-3xl font-black">
                             {item.title}
                         </p>
                     </li>

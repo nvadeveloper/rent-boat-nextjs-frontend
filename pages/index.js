@@ -1,7 +1,7 @@
-import Impression from '../components/indexPage/Impression';
-import Navigation from '../components/indexPage/Navigation';
-import Reviews from '../components/indexPage/Reviews';
-import Tagline from '../components/indexPage/Tagline';
+import Impression from '../components/home/Impression';
+import Navigation from '../components/home/Navigation';
+import Reviews from '../components/home/Reviews';
+import Tagline from '../components/home/Tagline';
 
 const Index = () => {
     return (

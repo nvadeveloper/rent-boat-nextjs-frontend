@@ -3,7 +3,7 @@ const CardText = ({ name, price, tag, person }) => {
         <>
             <div className="my-2">
                 <div className="flex justify-between items-center">
-                    <p className="font-extrabold text-xl">{name}</p>
+                    <p className="font-black text-xl">{name}</p>
                     <p className="text-sm text-gray-900">{price} руб/час</p>
                 </div>
                 <div className="flex justify-between items-center">

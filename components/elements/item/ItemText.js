@@ -8,9 +8,9 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
                     <span className="bg-blue-500 rounded-r-full py-1 pl-2 pr-4 text-white text-xs">
                         {tag}
                     </span>
-                    <h1 className="text-4xl font-extrabold font-montserrat mt-4 mb-4">{title}</h1>
+                    <h1 className="text-4xl font-black mt-4 mb-4">{title}</h1>
                     <p className="mb-6">{description}</p>
-                    <p className="text-4xl font-extrabold font-montserrat mb-4">{price} ₽</p>
+                    <p className="text-4xl font-black mb-4">{price} ₽</p>
                     <p className="mb-6">Вместимость: {capacityPerson} человек</p>
                     <ItemContactButton />
                 </div>
