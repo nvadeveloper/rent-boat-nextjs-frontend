@@ -5,10 +5,15 @@ const ReviewsCard = ({ imageUrl, name, description }) => {
         <>
             <li className="bg-slate-50 rounded-lg p-6">
                 <div className="flex items-center space-x-4">
+                    <div className='w-14 h-14 relative'>
                     <Image
-                        className="flex-none rounded-full object-cover w-14 h-14"
+                        className="rounded-full"
+                        layout="fill"
+                        objectFit="cover"
+                        alt={name + ' image'}
                         src={imageUrl}
                     />
+                    </div>
                     <div className="text-base text-gray-900 font-semibold">{name}</div>
                 </div>
                 <div className="mt-6 text-gray-600">
