@@ -10,7 +10,12 @@ const array = [
     {
         title: 'Аквадискотека',
     },
-
+    {
+        title: 'Аквадискотека',
+    },
+    {
+        title: 'Аквадискотека',
+    },
     {
         title: 'Аквадискотека',
     },
@@ -28,9 +33,10 @@ const Impression = () => {
             <ul className="flex overflow-x-auto no-scrollbar space-x-8 h-72 pb-4 snap-x">
                 {array.map((item, key) => (
                     <li
-                        className="rounded-2xl bg-gradient-to-r from-cyan-100 to-blue-100 snap-center hover:shadow-md ease-in-out duration-300 "
-                        key={key}>
-                        <p className="w-72 sm:w-80 p-6 text-3xl font-black">{item.title}</p>
+                        key={key}
+                        className="flex border rounded-xl w-72 sm:w-80 snap-center flex-col">
+                        <div className="bg-gradient-to-r from-cyan-100 to-blue-100 h-48 w-full rounded-t-xl"></div>
+                        <p className="p-6 pb-14 text-2xl font-bold w-72 sm:w-80">{item.title}</p>
                     </li>
                 ))}
             </ul>
