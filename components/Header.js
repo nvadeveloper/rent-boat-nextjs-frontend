@@ -74,7 +74,7 @@ const Header = () => {
                             (mobileMenuIsOpen ? ' flex' : ' hidden')
                         }
                         onClick={onToggleMobileMenu}>
-                        <ul className="fixed flex flex-col md:hidden bg-white w-80 top-5 right-5 rounded-full py-6 px-4  space-y-4">
+                        <ul className="fixed flex flex-col md:hidden bg-white w-80 top-5 right-5 rounded-xl py-6 px-4 space-y-4">
                             {menuItems.map((item, key) => (
                                 <li key={key}>
                                     <Link href={item.href}>
