@@ -26,7 +26,7 @@ const CardSlider = ({ images }) => {
                     nextEl: '.swiper-button-next',
                 }}
                 modules={[Pagination, Navigation]}
-                className="mySwiper bg-slate-100">
+                className="mySwiper bg-slate-100 rounded-xl">
                 {images.map((image, key) => (
                     <SwiperSlide key={key}>
                         <div className="h-64 w-full relative">

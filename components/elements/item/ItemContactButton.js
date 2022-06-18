@@ -24,13 +24,13 @@ const ItemContactButton = () => {
             </button>
             {showModal ? (
                 <>
-                    <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 m-auto lg:inset-0 lg:w-1/2 lg:h-1/2 ">
-                        <div className="flex justify-between border-b-[1px] p-4 lg:p-6">
+                    <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 m-auto lg:w-5/12 lg:h-full">
+                        <div className="flex justify-between border-b p-4 lg:p-6">
                             <p className="text-4xl font-black">Заказать</p>
                             <button
                                 className="h-8 w-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
                                 onClick={onToggleModal}>
-                                <IoIosClose className="h-6 w-6" />
+                                <IoIosClose className="h-6 w-6"/>
                             </button>
                         </div>
                         <div className="p-4 lg:p-6">
@@ -64,7 +64,7 @@ const ItemContactButton = () => {
                         </div>
                     </div>
                     <div
-                        className="fixed inset-0 z-40 bg-black opacity-50"
+                        className="fixed inset-0 z-40 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 bg-gray-600"
                         onClick={onToggleModal}
                     />
                 </>
