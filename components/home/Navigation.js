@@ -27,7 +27,7 @@ const Navigation = () => {
                     <li key={i}>
                         <Link href={item.href}>
                             <a>
-                                <div className="bg-white rounded-xl border border-gray-200 shadow-sm">
+                                <div className="rounded-xl border-[1px] border-gray-200">
                                     <img
                                         className="rounded-t-xl object-cover w-full h-64 sm:h-80"
                                         src="https://jets.ru/upload/iblock/e32/hw35vo1a5spnd429wuupzxr6qgt6l8io/Princess_Yachts_Y85_Preview_36.jpg"
