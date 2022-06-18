@@ -7,6 +7,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['spbkater.ru'],
+    domains: ['spbkater.ru', 'tailwindcss.com'],
   },
 }
