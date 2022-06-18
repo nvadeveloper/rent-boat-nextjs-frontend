@@ -18,10 +18,11 @@ const ItemContactButton = () => {
     return (
         <>
             <button
-                className="bg-black hover:bg-gray-600 text-white py-3 px-6 rounded-full mb-6"
+                className="px-6 py-3 rounded-full text-white mb-6bg-gray-900 hover:bg-gray-700 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-400"
                 onClick={onToggleModal}>
                 Заказать
             </button>
+
             {showModal ? (
                 <>
                     <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 m-auto lg:w-5/12 lg:h-full">
@@ -30,7 +31,7 @@ const ItemContactButton = () => {
                             <button
                                 className="h-8 w-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
                                 onClick={onToggleModal}>
-                                <IoIosClose className="h-6 w-6"/>
+                                <IoIosClose className="h-6 w-6" />
                             </button>
                         </div>
                         <div className="p-4 lg:p-6">

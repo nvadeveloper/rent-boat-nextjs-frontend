@@ -3,7 +3,7 @@ import Image from 'next/image';
 const ReviewsCard = ({ imageUrl, name, description }) => {
     return (
         <>
-            <li className="bg-slate-50 rounded-lg p-6">
+            <li className="bg-slate-50 rounded-xl p-6 shadow">
                 <div className="flex items-center space-x-4">
                     <div className="w-14 h-14 relative">
                         <Image
