@@ -42,10 +42,6 @@ const Header = () => {
 
     return (
         <header>
-            <div className="absolute  top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-                <img src="https://lukcode.com/static/images/apla.png" />
-            </div>
-
             <div>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
                     <div>
@@ -58,7 +54,7 @@ const Header = () => {
                         {menuItems.map((item, key) => (
                             <li key={key}>
                                 <Link href={item.href}>
-                                    <a className="rounded-xl py-3 px-4 hover:bg-gray-100 ease-in-out duration-200">
+                                    <a className="rounded-full py-3 px-4 hover:bg-gray-100 ease-in-out duration-200">
                                         {item.title}
                                     </a>
                                 </Link>
@@ -67,7 +63,7 @@ const Header = () => {
                     </ul>
 
                     <button
-                        className="h-10 w-6 rounded-xl justify-center items-center group md:hidden"
+                        className="h-10 w-6 rounded-full justify-center items-center group md:hidden"
                         onClick={onToggleMobileMenu}>
                         <FiMenu className="w-6 h-6 text-gray-900 hover:text-gray-700" />
                     </button>
@@ -78,7 +74,7 @@ const Header = () => {
                             (mobileMenuIsOpen ? ' flex' : ' hidden')
                         }
                         onClick={onToggleMobileMenu}>
-                        <ul className="fixed flex flex-col md:hidden bg-white w-80 top-5 right-5 rounded-xl py-6 px-4  space-y-4">
+                        <ul className="fixed flex flex-col md:hidden bg-white w-80 top-5 right-5 rounded-full py-6 px-4  space-y-4">
                             {menuItems.map((item, key) => (
                                 <li key={key}>
                                     <Link href={item.href}>
