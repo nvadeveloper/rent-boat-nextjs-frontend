@@ -12,8 +12,8 @@ const ReviewsCard = ({ imageUrl, name, description }) => {
                             layout="fill"
                             objectFit="cover"
                             src={imageUrl}
-                            placeholder="blur"
-                            blurDataURL={imageUrl}
+                            // placeholder="blur"
+                            // blurDataURL={imageUrl}
                             quality={50}
                         />
                     </div>
