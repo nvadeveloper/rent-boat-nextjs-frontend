@@ -1,15 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-// module.exports = nextConfig
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     reactStrictMode: true,
+// };
 
 module.exports = {
-  images: {
-    domains: ['spbkater.ru', 'tailwindcss.com'],
-  },
-  experimental: {
-    scrollRestoration: true,
-  },
-}
+    reactStrictMode: true,
+    images: {
+        domains: ['spbkater.ru', 'tailwindcss.com', 'jets.ru', 'lukcode.com'],
+    },
+    experimental: {
+        scrollRestoration: true,
+    },
+};

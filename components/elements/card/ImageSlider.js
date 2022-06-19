@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
 import Image from 'next/image';
 
-const CardSlider = ({ images }) => {
+const ImageSlider = ({ images }) => {
     return (
         <>
             <style jsx>{`
@@ -35,6 +35,9 @@ const CardSlider = ({ images }) => {
                                 layout="fill"
                                 objectFit="cover"
                                 alt="Rent Boat Image"
+                                placeholder="blur"
+                                blurDataURL={image}
+                                quality={1}   
                             />
                         </div>
                     </SwiperSlide>
@@ -82,4 +85,4 @@ const CardSlider = ({ images }) => {
     );
 };
 
-export default CardSlider;
+export default ImageSlider;

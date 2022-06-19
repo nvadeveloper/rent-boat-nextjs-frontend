@@ -37,6 +37,9 @@ const ImageSlider = ({ images }) => {
                                     objectFit="cover"
                                     alt="Rent Boat Image"
                                     className="absolute inset-0 object-cover"
+                                    placeholder="blur"
+                                    blurDataURL={image}
+                                    quality={75}
                                 />
                             </div>
                         </SwiperSlide>

@@ -1,4 +1,4 @@
-const CardText = ({ title, price, tag, person }) => {
+const Description = ({ title, price, tag, person }) => {
     return (
         <>
             <div className="my-2">
@@ -15,4 +15,4 @@ const CardText = ({ title, price, tag, person }) => {
     );
 };
 
-export default CardText;
+export default Description;
