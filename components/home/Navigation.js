@@ -39,6 +39,10 @@ const Navigation = () => {
                                         <p className="text-2xl font-bold tracking-tight text-gray-900">
                                             {item.title}
                                         </p>
+                                        <button className="flex items-center text-blue-600 mt-8 hover:text-cyan-600">
+                                            <span>Перейти к поиску</span>
+                                            <BsArrowRightShort className='w-6 h-6'/>
+                                        </button>
                                     </div>
                                 </div>
                             </a>

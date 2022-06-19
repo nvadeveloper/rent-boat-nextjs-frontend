@@ -1,6 +1,6 @@
-import ItemContactButton from './ItemContactButton';
+import ItemContactButton from './ContactButton';
 
-const ItemText = ({ tag, title, description, price, capacityPerson }) => {
+const Description = ({ tag, title, description, price, capacityPerson }) => {
     return (
         <>
             <div className="w-full pt-10 lg:w-1/2">
@@ -19,4 +19,4 @@ const ItemText = ({ tag, title, description, price, capacityPerson }) => {
     );
 };
 
-export default ItemText;
+export default Description;

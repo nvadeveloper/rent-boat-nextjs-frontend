@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IoIosClose } from 'react-icons/io';
 
-const ItemContactButton = () => {
+const ContactButton = () => {
     const [showModal, setShowModal] = useState(false);
 
     const onToggleModal = () => {
@@ -25,8 +25,8 @@ const ItemContactButton = () => {
 
             {showModal ? (
                 <>
-                    <div className="fixed bg-white z-50 bottom-0 right-0 w-full h-3/4 m-auto lg:w-5/12 lg:h-full">
-                        <div className="flex justify-between border-b p-4 lg:p-6">
+                    <div className="fixed bg-white z-50 bottom-0 rounded-t-2xl lg:rounded-none right-0 w-full h-3/4 m-auto lg:w-5/12 lg:h-full">
+                        <div className="flex justify-between items-center border-b p-6">
                             <p className="text-4xl font-black">Заказать</p>
                             <button
                                 className="h-8 w-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center"
@@ -34,7 +34,7 @@ const ItemContactButton = () => {
                                 <IoIosClose className="h-6 w-6" />
                             </button>
                         </div>
-                        <div className="p-4 lg:p-6">
+                        <div className="p-6">
                             <p>Вы можете сязаться с нами через:</p>
                             <p>
                                 Телефон:{' '}
@@ -74,4 +74,4 @@ const ItemContactButton = () => {
     );
 };
 
-export default ItemContactButton;
+export default ContactButton;

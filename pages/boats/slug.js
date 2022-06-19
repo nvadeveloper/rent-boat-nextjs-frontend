@@ -1,5 +1,5 @@
-import ItemSwiperSlider from '../../components/elements/item/ItemSlider';
-import ItemText from '../../components/elements/item/ItemText';
+import Slider from '../../components/elements/preview/Slider';
+import Description from '../../components/elements/preview/Description';
 
 const Index = () => {
     const images = [
@@ -28,8 +28,8 @@ const Index = () => {
         <>
             <section>
                 <div className="flex flex-wrap">
-                    <ItemSwiperSlider images={images} />
-                    <ItemText
+                    <Slider images={images} />
+                    <Description
                         tag={text.tag}
                         title={text.title}
                         description={text.description}
