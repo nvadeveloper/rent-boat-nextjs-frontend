@@ -70,7 +70,7 @@ const Header = () => {
 
                     <div
                         className={
-                            'fixed inset-0 w-full h-full md:hidden z-20 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 bg-gray-600' +
+                            'fixed inset-0 w-full h-full md:hidden z-20 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg-gray-400' +
                             (mobileMenuIsOpen ? ' flex' : ' hidden')
                         }
                         onClick={onToggleMobileMenu}>
