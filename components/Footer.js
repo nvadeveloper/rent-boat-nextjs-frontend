@@ -8,12 +8,12 @@ const Footer = () => {
                     <p className="text-sm">RENTBOAT 2022. ALL RIGHTS RESERVED.</p>
                 </div>
             </div> */}
-            <section className="container mx-auto px-4 sm:px-6 lg:px-8  mt-12">
+            <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">
                 <div className="border-t flex justify-between py-10 items-center">
                     <Link href="/">
-                        <a className="font-bold text-2xl text-blue-600 ">Rent Boat</a>
+                        <a className="font-bold text-2xl text-blue-600 ">RentBoat</a>
                     </Link>
-                    <span className='text-sm text-gray-600'>RENTBOAT 2022. ALL RIGHTS RESERVED.</span>
+                    <span className='text-sm text-gray-600'>All rights reserved.</span>
                 </div>
             </section>
         </footer>

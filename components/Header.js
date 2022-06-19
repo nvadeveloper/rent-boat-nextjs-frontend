@@ -46,7 +46,7 @@ const Header = () => {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
                     <div>
                         <Link href="/">
-                            <a className="font-bold text-2xl text-blue-600">Rent Boat</a>
+                            <a className="font-bold text-2xl text-blue-600">RentBoat</a>
                         </Link>
                     </div>
 
