@@ -1,6 +1,6 @@
 import ItemContactButton from './ContactButton';
 
-const Description = ({ tag, title, description, price, capacityPerson }) => {
+const Description = ({ title, description, price, person, tag }) => {
     return (
         <>
             <div className="w-full pt-10 lg:w-1/2">
@@ -11,7 +11,7 @@ const Description = ({ tag, title, description, price, capacityPerson }) => {
                     <h1 className="text-4xl font-black mt-4 mb-4">{title}</h1>
                     <p className="mb-6">{description}</p>
                     <p className="text-4xl font-black mb-4">{price} ₽</p>
-                    <p className="mb-6">Вместимость: {capacityPerson} человек</p>
+                    <p className="mb-6">Вместимость: {person} человек</p>
                     <ItemContactButton />
                 </div>
             </div>

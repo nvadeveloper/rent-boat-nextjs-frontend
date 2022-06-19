@@ -9,4 +9,7 @@ module.exports = {
   images: {
     domains: ['spbkater.ru', 'tailwindcss.com'],
   },
+  experimental: {
+    scrollRestoration: true,
+  },
 }

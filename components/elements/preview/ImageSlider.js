@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const Slider = ({ images }) => {
+const ImageSlider = ({ images }) => {
     return (
         <>
             <style jsx>{`
@@ -85,4 +85,4 @@ const Slider = ({ images }) => {
     );
 };
 
-export default Slider;
+export default ImageSlider;

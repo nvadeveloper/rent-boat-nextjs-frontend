@@ -1,14 +1,14 @@
-import Link from "next/link";
-import CardSlider from "./CardSlider";
-import CardText from "./CardText";
+import Link from 'next/link';
+import CardSlider from './CardSlider';
+import CardText from './CardText';
 
-const Card = ({ images, name, price, tag, person, href }) => {
+const Card = ({ id, title, price, tag, person, images }) => {
     return (
         <>
-            <Link href={'/' + href}>
+            <Link href={`/boats/${id}`}>
                 <a>
                     <CardSlider images={images} />
-                    <CardText name={name} price={price} tag={tag} person={person} />
+                    <CardText title={title} price={price} tag={tag} person={person} />
                 </a>
             </Link>
         </>
