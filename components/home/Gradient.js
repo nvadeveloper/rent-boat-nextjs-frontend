@@ -11,6 +11,7 @@ const Gradient = () => {
                     alt="gradient"
                     layout="fill"
                     quality={1}
+                    priority
                 />
             </div>
         </>

@@ -41,7 +41,8 @@ const Navigation = () => {
                                             blurDataURL={
                                                 "https://jets.ru/upload/iblock/e32/hw35vo1a5spnd429wuupzxr6qgt6l8io/Princess_Yachts_Y85_Preview_36.jpg"
                                             }
-                                            quality={100}
+                                            quality={50}
+                                            priority
                                         />
                                     </div>
 
