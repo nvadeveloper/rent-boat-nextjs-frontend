@@ -37,10 +37,10 @@ const Navigation = () => {
                                             className="rounded-t-xl"
                                             alt="Rent Boat Image"
                                             src="https://jets.ru/upload/iblock/e32/hw35vo1a5spnd429wuupzxr6qgt6l8io/Princess_Yachts_Y85_Preview_36.jpg"
-                                            placeholder="blur"
-                                            blurDataURL={
-                                                "https://jets.ru/upload/iblock/e32/hw35vo1a5spnd429wuupzxr6qgt6l8io/Princess_Yachts_Y85_Preview_36.jpg"
-                                            }
+                                            // placeholder="blur"
+                                            // blurDataURL={
+                                            //     "https://jets.ru/upload/iblock/e32/hw35vo1a5spnd429wuupzxr6qgt6l8io/Princess_Yachts_Y85_Preview_36.jpg"
+                                            // }
                                             quality={50}
                                             priority
                                         />
