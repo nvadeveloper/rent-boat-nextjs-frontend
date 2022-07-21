@@ -20,7 +20,7 @@ const Description = ({ title, description, price, person, tag }) => {
                     <div className="flex">
                         <ItemContactButton />
                         <div
-                            className="mb-6 flex items-center ml-3 bg-gray-900 rounded-full p-3 cursor-pointer"
+                            className="mb-6 flex items-center ml-3 rounded-full p-3 cursor-pointer bg-blue-600 hover:bg-blue-700 active:bg-blue-700 hover:outline-none hover:ring hover:ring-blue-300"
                             onClick={() => setFavorites(!favorites)}>
                             {favorites ? (
                                 <FaHeart className="h-6 w-6 text-white" />
