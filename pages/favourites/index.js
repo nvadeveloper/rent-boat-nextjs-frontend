@@ -49,7 +49,7 @@ const Favourites = ({ boats }) => {
     );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const res = await fetch('https://62af026a3bbf46a3521a24e5.mockapi.io/boats');
     const data = await res.json();
     return {
