@@ -50,7 +50,7 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    <ul className="space-x-3 hidden md:flex">
+                    <ul className="space-x-2 hidden md:flex">
                         {menuItems.map((item, key) => (
                             <li key={key}>
                                 <Link href={item.href}>

@@ -17,15 +17,16 @@ const Description = ({ title, description, price, person, tag }) => {
                     <p className="mb-6">{description}</p>
                     <p className="text-4xl font-black mb-4">{price} ₽</p>
                     <p className="mb-6">Вместимость: {person} человек</p>
-                    <div className="flex">
+                    <div className="flex mb-6">
                         <ItemContactButton />
                         <div
-                            className="mb-6 flex items-center ml-3 rounded-full p-3 cursor-pointer bg-blue-600 hover:bg-blue-700 active:bg-blue-700 hover:outline-none hover:ring hover:ring-blue-300"
+                            // className="mb-6 flex items-center ml-3 rounded-full cursor-pointer bg-blue-600 hover:bg-blue-700 active:bg-blue-700 hover:outline-none hover:ring hover:ring-blue-300"
+                            className='cursor-pointer p-4 ml-3 rounded-full text-white bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400'
                             onClick={() => setFavorites(!favorites)}>
                             {favorites ? (
-                                <FaHeart className="h-6 w-6 text-white" />
+                                <FaHeart className="h-4 w-4 text-white" />
                             ) : (
-                                <FaRegHeart className="h-6 w-6 text-white" />
+                                <FaRegHeart className="h-4 w-4 text-white" />
                             )}
                         </div>
                     </div>

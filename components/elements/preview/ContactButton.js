@@ -18,7 +18,7 @@ const ContactButton = () => {
     return (
         <>
             <button
-                className="px-8 py-3 rounded-full text-white mb-6 bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400"
+                className="px-8 py-3 rounded-full text-white bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400"
                 onClick={onToggleModal}>
                 Заказать
             </button>
