@@ -8,7 +8,7 @@ const Card = ({ id, title, price, tag, person, images }) => {
             <Link href={`/boats/${id}`}>
                 <a>
                     <ImageSlider images={images} />
-                    <Description title={title} price={price} tag={tag} person={person} />
+                    <Description title={title} price={price} tag={tag} person={person} id={id}/>
                 </a>
             </Link>
         </>

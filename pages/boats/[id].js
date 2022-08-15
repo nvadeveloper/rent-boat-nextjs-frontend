@@ -8,6 +8,7 @@ const Index = ({ boat }) => {
                 <div className="flex flex-wrap">
                     <ImageSlider images={boat.images} />
                     <Description
+                        id={boat.id}
                         title={boat.title}
                         tag={boat.tag}
                         description={boat.description}

@@ -1,9 +1,21 @@
 import ItemContactButton from './ContactButton';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const Description = ({ title, description, price, person, tag }) => {
+const Description = ({ title, description, price, person, tag, id }) => {
     const [favorites, setFavorites] = useState(false);
+
+    useEffect(() => {
+        if (localStorage.favoritesArray) {
+            if (localStorage.getItem('favoritesArray').split(',').includes(id)) {
+                setFavorites(true);
+            } else {
+                setFavorites(false);
+            }
+        } else {
+            setFavorites(false);
+        }
+    }, [id]);
 
     return (
         <>
@@ -17,16 +29,41 @@ const Description = ({ title, description, price, person, tag }) => {
                     <p className="mb-6">{description}</p>
                     <p className="text-4xl font-black mb-4">{price} ₽</p>
                     <p className="mb-6">Вместимость: {person} человек</p>
-                    <div className="flex mb-6">
+                    <div className="flex">
                         <ItemContactButton />
                         <div
-                            // className="mb-6 flex items-center ml-3 rounded-full cursor-pointer bg-blue-600 hover:bg-blue-700 active:bg-blue-700 hover:outline-none hover:ring hover:ring-blue-300"
-                            className='cursor-pointer p-4 ml-3 rounded-full text-white bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400'
-                            onClick={() => setFavorites(!favorites)}>
+                            className={
+                                'flex justify-center items-center cursor-pointer px-3 ml-3 rounded-full text-white hover:outline-none hover:ring ' +
+                                (favorites
+                                    ? 'bg-blue-600 hover:bg-blue-500 active:bg-blue-500 hover:ring-blue-300'
+                                    : 'bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:ring-gray-400')
+                            }
+                            onClick={() => {
+                                let Storage = localStorage;
+
+                                if (Storage.favoritesArray) {
+                                    let array = Storage.getItem('favoritesArray').split(',');
+                                    if (array.includes(id)) {
+                                        if (array.indexOf(id) !== -1) {
+                                            array.splice(array.indexOf(id), 1);
+                                            Storage.setItem('favoritesArray', array);
+                                            setFavorites(false);
+                                        }
+                                    } else {
+                                        array.push(id);
+                                        Storage.setItem('favoritesArray', array);
+                                        setFavorites(true);
+                                    }
+                                } else {
+                                    Storage.setItem('favoritesArray', id);
+                                    setFavorites(true);
+                                }
+                                // Storage.clear(); // отчистить
+                            }}>
                             {favorites ? (
-                                <FaHeart className="h-4 w-4 text-white" />
+                                <FaHeart className="h-6 w-6 text-white" />
                             ) : (
-                                <FaRegHeart className="h-4 w-4 text-white" />
+                                <FaRegHeart className="h-6 w-6 text-white" />
                             )}
                         </div>
                     </div>
