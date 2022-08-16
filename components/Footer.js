@@ -8,7 +8,7 @@ const Footer = () => {
                     <Link href="/">
                         <a className="font-bold text-2xl text-blue-600 ">RentBoat</a>
                     </Link>
-                    <span className='text-sm text-gray-600'>All rights reserved.</span>
+                    <span className='text-sm text-gray-600'>All rights reserved. 2022</span>
                 </div>
             </section>
         </footer>

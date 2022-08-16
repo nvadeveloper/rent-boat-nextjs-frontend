@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
 import Image from "next/image";
 
-const array = [
+const Menu = [
     {
         title: "Аренда Катра",
         href: "/boats",
@@ -24,7 +24,7 @@ const Navigation = () => {
     return (
         <>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                {array.map((item, key) => (
+                {Menu.map((item, key) => (
                     <li key={key}>
                         <Link href={item.href}>
                             <a>
