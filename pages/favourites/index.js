@@ -23,10 +23,9 @@ const Favourites = ({ boats }) => {
 
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <PageHeading>
-                <h1>Избранное</h1>
-            </PageHeading>
+            <PageHeading>Избранное</PageHeading>
             <div>
+                <PageHeading>Катера</PageHeading>
                 <FavouritesBoats boats={boats} isFavourites={isFavouritesBoats} />
 
                 {isFavouritesBoats.length ? (
