@@ -7,17 +7,17 @@ import Router from 'next/router';
 import PageHeading from '../../components/elements/PageHeading';
 import FavouritesBoats from '../../components/elements/FavouritesBoats';
 
-const Favourites = ({ boats, yachts }) => {
-    const [isFavourites, setIsFavourites] = useState([]);
+const Favourites = ({ boats }) => {
+    const [isFavouritesBoats, setIsFavouritesBoats] = useState([]);
 
     useEffect(() => {
-        setIsFavourites([]);
+        setIsFavouritesBoats([]);
         let Storage = localStorage;
         if (Storage.favoritesBoatsArray) {
             let array = Storage.getItem('favoritesBoatsArray').split(',');
-            setIsFavourites(array);
+            setIsFavouritesBoats(array);
         } else {
-            setIsFavourites([]);
+            setIsFavouritesBoats([]);
         }
     }, [boats]);
 
@@ -27,9 +27,9 @@ const Favourites = ({ boats, yachts }) => {
                 <h1>Избранное</h1>
             </PageHeading>
             <div>
-                <FavouritesBoats boats={boats} isFavourites={isFavourites} />
+                <FavouritesBoats boats={boats} isFavourites={isFavouritesBoats} />
 
-                {isFavourites.length ? (
+                {isFavouritesBoats.length ? (
                     <button
                         className="mt-10 px-8 py-3 rounded-full text-white bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400"
                         onClick={() => {
