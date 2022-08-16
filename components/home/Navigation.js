@@ -9,15 +9,15 @@ const Menu = [
     },
     {
         title: "Аренда Яхты",
-        href: "/yachts",
+        href: "/boats",
     },
     {
         title: "Аренда Тепдохода",
-        href: "/ships",
+        href: "/boats",
     },
     {
         title: "Сапбординг",
-        href: "/ships",
+        href: "/boats",
     },
 ];
 const Navigation = () => {

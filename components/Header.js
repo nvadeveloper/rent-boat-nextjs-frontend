@@ -34,13 +34,14 @@ const Header = () => {
             title: 'Яхты',
             href: '/yachts',
         },
-        {
-            title: 'Избранное',
-            href: '/favourites',
-        },
+
         {
             title: 'О нас',
             href: '/about',
+        },
+        {
+            title: 'Избранное 🤍',
+            href: '/favourites',
         },
     ];
 

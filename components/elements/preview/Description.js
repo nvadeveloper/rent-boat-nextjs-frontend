@@ -6,8 +6,8 @@ const Description = ({ title, description, price, person, tag, id }) => {
     const [favorites, setFavorites] = useState(false);
 
     useEffect(() => {
-        if (localStorage.favoritesArray) {
-            if (localStorage.getItem('favoritesArray').split(',').includes(id)) {
+        if (localStorage.favoritesBoatsArray) {
+            if (localStorage.getItem('favoritesBoatsArray').split(',').includes(id)) {
                 setFavorites(true);
             } else {
                 setFavorites(false);
@@ -40,21 +40,21 @@ const Description = ({ title, description, price, person, tag, id }) => {
                         onClick={() => {
                             let Storage = localStorage;
 
-                            if (Storage.favoritesArray) {
-                                let array = Storage.getItem('favoritesArray').split(',');
+                            if (Storage.favoritesBoatsArray) {
+                                let array = Storage.getItem('favoritesBoatsArray').split(',');
                                 if (array.includes(id)) {
                                     if (array.indexOf(id) !== -1) {
                                         array.splice(array.indexOf(id), 1);
-                                        Storage.setItem('favoritesArray', array);
+                                        Storage.setItem('favoritesBoatsArray', array);
                                         setFavorites(false);
                                     }
                                 } else {
                                     array.push(id);
-                                    Storage.setItem('favoritesArray', array);
+                                    Storage.setItem('favoritesBoatsArray', array);
                                     setFavorites(true);
                                 }
                             } else {
-                                Storage.setItem('favoritesArray', id);
+                                Storage.setItem('favoritesBoatsArray', id);
                                 setFavorites(true);
                             }
                         }}>
