@@ -11,7 +11,7 @@ const FavouritesBoats = ({ boats, isFavourites }) => {
                             <Link href={`/boats/${boat.id}`}>
                                 <a>
                                     <div className="flex h-full">
-                                        <div className="w-40 sm:w-64 h-40 relative bg-slate-100">
+                                        <div className="w-44 sm:w-64 h-40 relative bg-slate-100">
                                             <Image
                                                 src={boat.images[0]}
                                                 layout="fill"
@@ -21,16 +21,13 @@ const FavouritesBoats = ({ boats, isFavourites }) => {
                                                 quality={1}
                                             />
                                         </div>
-                                        <div className="p-6">
-                                            <p className="font-black text-xl">{boat.title}</p>
-                                            <p className="text-sm text-gray-900">
-                                                {boat.price} руб/час
+                                        <div className="p-6 text-gray-900 text-sm">
+                                            <p className="font-black text-black text-xl">
+                                                {boat.title}
                                             </p>
-
-                                            <p className="text-sm text-gray-900">{boat.tag}</p>
-                                            <p className="text-sm text-gray-900">
-                                                {boat.person} человек
-                                            </p>
+                                            <p>{boat.price} руб/час</p>
+                                            <p>{boat.tag}</p>
+                                            <p>{boat.person} человек</p>
                                         </div>
                                     </div>
                                 </a>
