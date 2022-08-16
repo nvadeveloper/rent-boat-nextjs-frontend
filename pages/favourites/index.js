@@ -28,7 +28,7 @@ const Favourites = ({ boats, yachts }) => {
             </PageHeading>
             <div>
                 <FavouritesBoats boats={boats} isFavourites={isFavourites} />
-                
+
                 {isFavourites.length ? (
                     <button
                         className="mt-10 px-8 py-3 rounded-full text-white bg-gray-900 hover:bg-gray-700 active:bg-gray-700 hover:outline-none hover:ring hover:ring-gray-400"
@@ -55,8 +55,11 @@ const Favourites = ({ boats, yachts }) => {
 
 export const getServerSideProps = async () => {
     const res = await fetch('https://62af026a3bbf46a3521a24e5.mockapi.io/boats');
-    const data = await res.json();
+    // const res2 = await fetch('https://62af026a3bbf46a3521a24e5.mockapi.io/boats');
 
+    const data = await res.json();
+    // const data2 = await res2.json();
+    // yachts: data2
     return {
         props: { boats: data },
     };
