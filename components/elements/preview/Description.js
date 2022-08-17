@@ -1,6 +1,8 @@
-import ItemContactButton from './ContactButton';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
+import ItemContactButton from './ContactButton';
 
 const Description = ({ title, description, price, person, tag, id }) => {
     const [favorites, setFavorites] = useState(false);
@@ -52,10 +54,16 @@ const Description = ({ title, description, price, person, tag, id }) => {
                                     array.push(id);
                                     Storage.setItem('favoritesBoatsArray', array);
                                     setFavorites(true);
+                                    toast('Добавлено в избранное', {
+                                        icon: '💙',
+                                    });
                                 }
                             } else {
                                 Storage.setItem('favoritesBoatsArray', id);
                                 setFavorites(true);
+                                toast('Добавлено в избранное', {
+                                    icon: '💙',
+                                });
                             }
                         }}>
                         {favorites ? (
@@ -64,6 +72,7 @@ const Description = ({ title, description, price, person, tag, id }) => {
                             <FaRegHeart className="h-6 w-6 text-white" />
                         )}
                     </div>
+                    <Toaster position="top-right"  reverseOrder={false}/>
                 </div>
             </div>
         </div>
