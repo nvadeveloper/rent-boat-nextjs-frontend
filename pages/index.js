@@ -6,7 +6,6 @@ import Tagline from '../components/home/Tagline';
 
 const Index = () => {
     return (
-        <>
             <section className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <Gradient />
                 <Tagline />
@@ -14,7 +13,6 @@ const Index = () => {
                 <Impression />
                 <Reviews />
             </section>
-        </>
     );
 };
 
